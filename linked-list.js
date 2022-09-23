@@ -117,7 +117,6 @@ class LinkedList {
     let previousNode;
     while (current != null) {
       if (count == index) {
-        console.log('...');
         previousNode.next = newNode;
         newNode.next = current;
         return;
@@ -208,7 +207,7 @@ class LinkedList {
             nextNode = nextNode.next;
             count++;
           }
-          console.log('--> GOT SEQUENCE MATCH ', count);
+          //console.log('--> GOT SEQUENCE MATCH ', count);
 
           // delete sequence match
           if (previousNode) {
@@ -217,18 +216,18 @@ class LinkedList {
           // update current node after matching sequence loop
           current = afterMatchNode;
         }
-        console.log('--> GOT MATCH');
+        //console.log('--> GOT MATCH');
 
         // Check for a head node
         if (!previousNode) {
-          console.log('--> GOT HEAD');
+          //console.log('--> GOT HEAD');
           this.head = current.next;
         } else {
           previousNode.next = current.next;
         }
         // Re-aarange the tail if deleted node has the last value
         if (current.next == null) {
-          console.log('--> GOT TAIL');
+          //console.log('--> GOT TAIL');
           this.tail = previousNode;
         }
 
@@ -267,4 +266,4 @@ class LinkedList {
   }
 }
 
-module.exports = LinkedList;
+module.exports = { LinkedList, Node };
