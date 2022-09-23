@@ -88,6 +88,40 @@ class LinkedList {
   }
 
   // Insert
+  insertAt(index, value) {
+    const newNode = new Node(value);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
+      return;
+    }
+    if (index == 0) {
+      newNode.next = this.head;
+      this.head = newNode;
+      return;
+    }
+
+    let count = 0;
+    let current = this.head;
+    let previousNode;
+    while (current != null) {
+      if (count == index) {
+        console.log('...');
+        previousNode.next = newNode;
+        newNode.next = current;
+        return;
+      }
+      if (current.next == null && count + 1 == index) {
+        current.next = newNode;
+        this.tail = newNode;
+        return;
+      }
+      previousNode = current;
+      current = current.next;
+      count++;
+    }
+    return null;
+  }
 
   // Delete Node
   remove(index) {
@@ -204,6 +238,9 @@ list.print();
 // console.log('Index: ', list.index(10));
 //list.remove(1);
 list.delete('B');
+list.print();
+
+list.insertAt(5, 'INSERT');
 list.print();
 
 console.log(list);
