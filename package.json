@@ -1,14 +1,14 @@
 {
   "name": "data-structures",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom datastructures build demo and testing",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "author": "Martin Capovcak",
+  "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.6",
     "mocha": "^10.0.0"

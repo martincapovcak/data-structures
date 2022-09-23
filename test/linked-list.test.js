@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-const { LinkedList, Node } = require('../linked-list.js');
+const { LinkedList, Node } = require('../lib/linked-list');
 
 describe('Linked List', () => {
   let list, value1, value2, valueFirst, valueLast, valueInsert, values;
