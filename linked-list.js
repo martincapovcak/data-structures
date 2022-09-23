@@ -47,6 +47,17 @@ class LinkedList {
     }
   }
 
+  // Size
+  size() {
+    let current = this.head;
+    let count = 0;
+    while (current != null) {
+      current = current.next;
+      count++;
+    }
+    return count;
+  }
+
   // Return Linkded list Array
   toArray() {
     let bucket = [];
@@ -76,19 +87,19 @@ class LinkedList {
   }
 
   // Get value from Node index
-  index(num) {
+  elementAt(index) {
     let current = this.head;
-    let index = 0;
+    let count = 0;
     while (current != null) {
-      if (index == num) return current.val;
+      if (count == index) return current.val;
       current = current.next;
-      index++;
+      count++;
     }
     return null;
   }
 
   // Insert
-  insertAt(index, value) {
+  addAt(index, value) {
     const newNode = new Node(value);
     if (!this.head) {
       this.head = newNode;
@@ -124,7 +135,7 @@ class LinkedList {
   }
 
   // Delete Node
-  remove(index) {
+  removeAt(index) {
     if (!this.head) return null;
     let current = this.head;
     let previousNode;
@@ -149,6 +160,23 @@ class LinkedList {
       count++;
     }
     return null;
+  }
+
+  // Pop
+  pop() {
+    if (this.head == null) return null;
+    let current = this.head;
+    let previousNode;
+    while (current != null) {
+      if (current.next == null) {
+        previousNode.next = null;
+        this.tail = previousNode;
+        break;
+      }
+      previousNode = current;
+      current = current.next;
+    }
+    return current;
   }
 
   // Delete all matched values
@@ -215,64 +243,28 @@ class LinkedList {
   }
 
   // Reverse Linked list
+  reverse() {
+    if (!this.head) return null;
+
+    let current = this.head;
+    let previousNode = null;
+    while (current != null) {
+      const nextNode = current.next;
+      current.next = previousNode;
+      previousNode = current;
+      current = nextNode;
+    }
+    this.head = previousNode;
+
+    current = this.head;
+    while (current != null) {
+      if (current.next == null) {
+        this.tail = current;
+        break;
+      }
+      current = current.next;
+    }
+  }
 }
 
-const list = new LinkedList();
-
-list.append('A');
-list.append('B');
-list.append('C');
-list.append('C');
-list.prepend('FIRST');
-list.append('B');
-list.append('B');
-list.append('E');
-list.append('F');
-list.append('G');
-list.append('LAST');
-list.append('B');
-
-list.print();
-
-// console.log('Index of: ', list.indexOf('FIRST'));
-// console.log('Index: ', list.index(10));
-//list.remove(1);
-list.delete('B');
-list.print();
-
-list.insertAt(5, 'INSERT');
-list.print();
-
-console.log(list);
-
-/*
-const a = new Node('a');
-const b = new Node('b');
-const c = new Node('c');
-const d = new Node('d');
-
-a.next = b;
-b.next = c;
-c.next = d;
-*/
-
-/*
-const printLinkedList = head => {
-  let current = head;
-  while (current != null) {
-    console.log(current.val);
-    current = current.next;
-  }
-};
-*/
-
-/*
-const printLinkedList = head => {
-  if (head == null) return;
-  console.log(head.val);
-  printLinkedList(head.next);
-};
-
-printLinkedList(a);
-
-*/
+module.exports = LinkedList;
