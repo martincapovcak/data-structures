@@ -26,6 +26,26 @@ const { Stack } = require('./lib/stack.js');
 const stack = new Stack();
 ```
 
+### #Properties
+
+#### > items
+
+### #Methods
+
+#### > push(param)
+
+#### > pop()
+
+#### > peek()
+
+#### > size()
+
+#### > isEmpty()
+
+#### > print()
+
+#### > purge()
+
 ---
 
 ## Queue
@@ -111,6 +131,38 @@ $ npm run test-linkedlist
 const { LinkedList } = require('./lib/linked-list.js');
 const linkedList = new LinkedList();
 ```
+
+### #Properties
+
+#### > head
+
+#### > tail
+
+### #Methods
+
+#### > append(param)
+
+#### > prepend(param)
+
+#### > size()
+
+#### > toArray(param)
+
+#### > print()
+
+#### > indexOf(param)
+
+#### > elementAt(param)
+
+#### > addAt(param1, param2)
+
+#### > removeAt(param)
+
+#### > pop()
+
+#### > delete(param)
+
+#### > reverse
 
 ---
 
