@@ -4,7 +4,9 @@
   "description": "Custom datastructures build demo and testing",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test-queue": "mocha ./test/queue.test.js",
+    "test-linkedlist": "mocha ./test/linked-list.test.js",
+    "test-hashtable": "mocha ./test/hash-table.test.js"
   },
   "keywords": [],
   "author": "Martin Capovcak",
