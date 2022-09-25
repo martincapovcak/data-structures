@@ -22,7 +22,7 @@ const { Queue } = require('./lib/queue.js');
 const q = new Queue();
 ```
 
-### Properties
+### #Properties
 
 #### > first
 
@@ -40,7 +40,7 @@ Type: number</br>
 Default: 0</br>
 Visibility: Private</br>
 
-### Methods
+### #Methods
 
 #### > size()
 
@@ -62,7 +62,7 @@ Info: Creates new node and add it to a queue
 
 #### > dequeue()
 
-Info: Removes first node and returns its value
+Info: Removes first node from queue and returns its value
 
 #### > print()
 
