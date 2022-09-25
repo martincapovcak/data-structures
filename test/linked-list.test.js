@@ -186,7 +186,7 @@ describe('Linked List', () => {
       });
     });
 
-    describe('reverse', () => {
+    describe('reverse()', () => {
       it('reverse the order of nodes', () => {
         list.prepend(valueFirst);
         list.append(valueLast);
