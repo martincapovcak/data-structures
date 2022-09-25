@@ -78,8 +78,9 @@ describe('Linked List', () => {
 
     describe('toArray()', () => {
       it('returns an array from linked-list', () => {
-        const result = list.toArray();
+        const result = LinkedList.toArray(list.head);
         assert.equal(Array.isArray(result), true);
+        list.print();
       });
     });
 
