@@ -7,13 +7,36 @@ Datastructures demo plus mocha / chai tests
 3. Linked List
 4. Hash Table
 
+---
+
 ## Stack
 
-Last in last out
+_Last in first out_
+
+### Test
+
+```sh
+
+```
+
+### Usage
+
+```js
+const { Stack } = require('./lib/stack.js');
+const stack = new Stack();
+```
 
 ---
 
 ## Queue
+
+_First in first out_
+
+### Test
+
+```sh
+$ npm run test-queue
+```
 
 ### Usage
 
@@ -76,4 +99,56 @@ Info: Purge all nodes and reset queue to default settings
 
 ## Linked List
 
+### Test
+
+```sh
+$ npm run test-linkedlist
+```
+
+### Usage
+
+```js
+const { LinkedList } = require('./lib/linked-list.js');
+const linkedList = new LinkedList();
+```
+
+---
+
 ## Hash Table
+
+### Test
+
+```sh
+$ npm run test-hashtable
+```
+
+### Usage
+
+```js
+const { HashTable } = require('./lib/hash-table.js');
+const ht = new HashTable();
+```
+
+### #Properties
+
+#### > table
+
+Type: Array</br>
+Default: Array(127)
+
+#### > size
+
+Type: Number</br>
+Default: 0
+
+### #Methods
+
+#### > hash(param1, param2)
+
+#### > set(param1, param2)
+
+#### > get(param1)
+
+#### > remove(param1)
+
+#### > print()
