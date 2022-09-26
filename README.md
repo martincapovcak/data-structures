@@ -67,6 +67,10 @@ const q = new Queue();
 
 ### #Properties
 
+- first
+- last
+- size
+
 #### > first
 
 Default: null</br>
@@ -84,6 +88,13 @@ Default: 0</br>
 Visibility: Private</br>
 
 ### #Methods
+
+- size
+- toArray()
+- enqueue()
+- dequeue()
+- print()
+- purge()
 
 #### > size
 
@@ -136,6 +147,9 @@ const linkedList = new LinkedList();
 
 ### #Properties
 
+- head
+- tail
+
 #### > head
 
 Default: null</br>
@@ -147,6 +161,19 @@ Default: null</br>
 Info: Stores the last node of a Linked-list
 
 ### #Methods
+
+- append()
+- prepend()
+- size()
+- toArray()
+- print()
+- indexOf()
+- elementAt()
+- addAt()
+- removeAt()
+- pop()
+- delete()
+- reverse()
 
 #### > append(param)
 
@@ -243,6 +270,9 @@ const ht = new HashTable();
 
 ### #Properties
 
+- table
+- size
+
 #### > table
 
 Type: Array</br>
@@ -254,6 +284,12 @@ Type: Number</br>
 Default: 0
 
 ### #Methods
+
+- hash()
+- set()
+- get()
+- remove()
+- print()
 
 #### > hash(param1, param2)
 
