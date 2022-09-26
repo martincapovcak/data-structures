@@ -28,23 +28,59 @@ const stack = new Stack();
 
 ### #Properties
 
+- items
+
 #### > items
+
+Type: Array</br>
+Visibility: Private</br>
+Info: Stores the stack
 
 ### #Methods
 
+- push()
+- pop()
+- peek()
+- size()
+- isEmpty()
+- print()
+- purge()
+
 #### > push(param)
+
+@param: element</br>
+@Type: Any
+
+Info: Adds element to the top of a stack
 
 #### > pop()
 
+Returns: element</br>
+Info: Removes top element from stack and returns it
+
 #### > peek()
+
+Returns: element</br>
+Info: Returns top element from the stack
 
 #### > size()
 
+Returns: Number</br>
+Info: Returns the size of a stack
+
 #### > isEmpty()
+
+Returns: Bool</br>
+Info: Returns true if the stack is empty, else returns false
 
 #### > print()
 
+Info: Prints Queue as a table to console
+
 #### > purge()
+
+Returns: Array</br>
+Info: Removes all elements from the stack
 
 ---
 
