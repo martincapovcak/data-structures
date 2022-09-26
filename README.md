@@ -85,21 +85,23 @@ Visibility: Private</br>
 
 ### #Methods
 
-#### > size()
+#### > size
 
 Type: Getter</br>
 Info: Returns the length of a queue
 
 #### > toArray(param)
 
-@param type: Any
+@param</br>
+@Type: Any
 
 Type: Static</br>
 Info: Converts Queue structure to an array
 
 #### > enqueue(param)
 
-@param type: Any
+@param: value</br>
+@Type: Any
 
 Info: Creates new node and add it to a queue
 
@@ -255,10 +257,39 @@ Default: 0
 
 #### > hash(param1, param2)
 
+@param1: key </br>
+@Type: String
+
+@param2: value</br>
+@Type: Any
+
+Type: Static
+Info: Returns hash for given key in tke max length of a scope param
+
 #### > set(param1, param2)
 
-#### > get(param1)
+@param1: key </br>
+@Type: String
 
-#### > remove(param1)
+@param2: value</br>
+@Type: Any
+
+Info: Create a new record in the hash-table
+
+#### > get(param)
+
+@param: key </br>
+@Type: String
+
+Info: Returns back value of a record with given key as a param
+
+#### > remove(param)
+
+@param: key </br>
+@Type: String
+
+Info: Removes record from hash-table
 
 #### > print()
+
+Info: Prints hash-table as a table to the console
