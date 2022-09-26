@@ -148,13 +148,15 @@ Info: Stores the last node of a Linked-list
 
 #### > append(param)
 
-@param type: Any
+@param: value</br>
+@Type: Any
 
 Info: Creates a new node with given value as param at the end of a linked-list
 
 #### > prepend(param)
 
-@param type: Any
+@param: value</br>
+@Type: Any
 
 Info: Creates a new node with given value as param at the very begining of i linked-list
 
@@ -164,9 +166,10 @@ Info: Returns the size of linked-list
 
 #### > toArray(param)
 
-@param type: Any
+@param</br>
+@type: Any
 
-Type: Static
+Type: Static</br>
 Info: Converts linked-list structure to an array
 
 #### > print()
@@ -175,26 +178,32 @@ Info: Prints linked-list as a table to console
 
 #### > indexOf(param)
 
-@param type: Any
+@param: value</br>
+@Type: Any
 
 Info: Searches for node with value of given param. Returns node index
 
 #### > elementAt(param)
 
-@param type: Number
+@param: index</br>
+@Type: Number
 
 Info: Searches for node at given index as param. Returns node value
 
 #### > addAt(param1, param2)
 
-@param1 type: Number</br>
-@param2 type: Any
+@param1: index</br>
+@Type: Number
+
+@param2: value</br>
+@Type: Any
 
 Info: Creates new node at certain index with given value
 
 #### > removeAt(param)
 
-@param type: Number
+@param: index</br>
+@Type: Number
 
 Info: Removes node at certain index from linked-list
 
@@ -204,11 +213,12 @@ Info: Removes last node from linked-list and returnes it
 
 #### > delete(param)
 
-@param type: Any
+@param: value</br>
+@Type: Any
 
 Info: Removes every node from linked-list which value match the param
 
-#### > reverse
+#### > reverse()
 
 Info: Reverse nodes order in the linked-list
 
