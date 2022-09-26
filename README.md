@@ -136,33 +136,81 @@ const linkedList = new LinkedList();
 
 #### > head
 
+Default: null</br>
+Info: Stores the first node of a Linked-list
+
 #### > tail
+
+Default: null</br>
+Info: Stores the last node of a Linked-list
 
 ### #Methods
 
 #### > append(param)
 
+@param type: Any
+
+Info: Creates a new node with given value as param at the end of a linked-list
+
 #### > prepend(param)
+
+@param type: Any
+
+Info: Creates a new node with given value as param at the very begining of i linked-list
 
 #### > size()
 
+Info: Returns the size of linked-list
+
 #### > toArray(param)
+
+@param type: Any
+
+Type: Static
+Info: Converts linked-list structure to an array
 
 #### > print()
 
+Info: Prints linked-list as a table to console
+
 #### > indexOf(param)
+
+@param type: Any
+
+Info: Searches for node with value of given param. Returns node index
 
 #### > elementAt(param)
 
+@param type: Number
+
+Info: Searches for node at given index as param. Returns node value
+
 #### > addAt(param1, param2)
+
+@param1 type: Number</br>
+@param2 type: Any
+
+Info: Creates new node at certain index with given value
 
 #### > removeAt(param)
 
+@param type: Number
+
+Info: Removes node at certain index from linked-list
+
 #### > pop()
+
+Info: Removes last node from linked-list and returnes it
 
 #### > delete(param)
 
+@param type: Any
+
+Info: Removes every node from linked-list which value match the param
+
 #### > reverse
+
+Info: Reverse nodes order in the linked-list
 
 ---
 
