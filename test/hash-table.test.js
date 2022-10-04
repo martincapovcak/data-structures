@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-const HashTable = require('../lib/hash-table.js');
+const { HashTable } = require('../lib/hash-table.js');
 
 describe('Hash Table', () => {
   let ht, ht2;

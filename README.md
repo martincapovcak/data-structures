@@ -11,12 +11,12 @@ Datastructures demo plus mocha / chai tests
 
 ## Stack
 
-_Last in first out_
+_"Last in first out"_
 
 ### Test
 
 ```sh
-
+$ npm run test-stack
 ```
 
 ### Usage
@@ -26,7 +26,7 @@ const { Stack } = require('./lib/stack.js');
 const stack = new Stack();
 ```
 
-### #Properties
+### # Properties
 
 - items
 
@@ -36,7 +36,7 @@ Type: Array</br>
 Visibility: Private</br>
 Info: Stores the stack
 
-### #Methods
+### # Methods
 
 - push()
 - pop()
@@ -79,7 +79,6 @@ Info: Prints Queue as a table to console
 
 #### > purge()
 
-Returns: Array</br>
 Info: Removes all elements from the stack
 
 ---
@@ -101,7 +100,7 @@ const { Queue } = require('./lib/queue.js');
 const q = new Queue();
 ```
 
-### #Properties
+### # Properties
 
 - first
 - last
@@ -123,7 +122,7 @@ Type: number</br>
 Default: 0</br>
 Visibility: Private</br>
 
-### #Methods
+### # Methods
 
 - size
 - toArray()
@@ -181,7 +180,7 @@ const { LinkedList } = require('./lib/linked-list.js');
 const linkedList = new LinkedList();
 ```
 
-### #Properties
+### # Properties
 
 - head
 - tail
@@ -196,7 +195,7 @@ Info: Stores the first node of a Linked-list
 Default: null</br>
 Info: Stores the last node of a Linked-list
 
-### #Methods
+### # Methods
 
 - append()
 - prepend()
@@ -304,7 +303,7 @@ const { HashTable } = require('./lib/hash-table.js');
 const ht = new HashTable();
 ```
 
-### #Properties
+### # Properties
 
 - table
 - size
@@ -319,7 +318,7 @@ Default: Array(127)
 Type: Number</br>
 Default: 0
 
-### #Methods
+### # Methods
 
 - hash()
 - set()
