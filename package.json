@@ -4,6 +4,7 @@
   "description": "Custom datastructures build demo and testing",
   "main": "index.js",
   "scripts": {
+    "test-stack": "mocha ./test/stack.test.js",
     "test-queue": "mocha ./test/queue.test.js",
     "test-linkedlist": "mocha ./test/linked-list.test.js",
     "test-hashtable": "mocha ./test/hash-table.test.js"
