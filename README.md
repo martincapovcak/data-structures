@@ -85,7 +85,7 @@ Info: Removes all elements from the stack
 
 ## Queue
 
-_First in first out_
+_"First in first out"_
 
 ### Test
 
